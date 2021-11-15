@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/winnerLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/secondaryColor"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/player_imgcomputer"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_oval"
+                android:backgroundTint="@color/fond"
+                tools:srcCompat="@drawable/persorobot1" />
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="12dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/player_imghuman"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_oval"
+                android:backgroundTint="@color/fond"
+                tools:srcCompat="@drawable/persofille50" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:elevation="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:id="@+id/player_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvicon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/chelsea_market"
+                    android:text="icone :"
+                    android:textSize="20sp" />
+
+                <TableLayout
+                    android:id="@+id/player_table_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:id="@+id/imageicon1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/ripple_oval"
+                            android:backgroundTint="@color/secondaryColor" />
+
+                        <ImageButton
+                            android:id="@+id/imageicon2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="6dp"
+                            android:background="@drawable/ripple_oval"
+                            android:backgroundTint="@color/secondaryColor" />
+
+                        <ImageButton
+                            android:id="@+id/imageicon3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/ripple_oval"
+                            android:backgroundTint="@color/secondaryColor" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:id="@+id/imageicon4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/ripple_oval"
+                            android:backgroundTint="@color/secondaryColor" />
+
+                        <ImageButton
+                            android:id="@+id/imageicon5"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:background="@drawable/ripple_oval"
+                            android:backgroundTint="@color/secondaryColor" />
+
+                        <ImageButton
+                            android:id="@+id/imageicon6"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/ripple_oval"
+                            android:backgroundTint="@color/secondaryColor" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/player_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:hint="pseudo"
+                    android:inputType="textPersonName" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/chelsea_market"
+                    android:text="couleur :"
+                    android:textSize="20sp" />
+
+                <TableLayout
+                    android:id="@+id/player_table_colors"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:id="@+id/imageButton1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/ripple_oval"
+                            android:backgroundTint="@color/team0" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="6dp"
+                            android:background="@drawable/ripple_oval"
+                            android:backgroundTint="@color/team1" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/ripple_oval"
+                            android:backgroundTint="@color/team2" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:id="@+id/imageButton4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/ripple_oval"
+                            android:backgroundTint="@color/team3_bright" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton5"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:background="@drawable/ripple_oval"
+                            android:backgroundTint="@color/team4" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton6"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/ripple_oval"
+                            android:backgroundTint="@color/team5" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/player_btnOK"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_oval"
+            android:backgroundTint="#CDDC39"
+            android:tint="@null"
+            app:layout_anchorGravity="bottom|right|end"
+            app:srcCompat="@drawable/ic_done_grey600_24dp" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

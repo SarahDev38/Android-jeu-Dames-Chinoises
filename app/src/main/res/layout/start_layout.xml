@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/start_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fond"
+    tools:context="com.sarahdev.chinesecheckers.start.StartActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ImageButton
+        android:id="@+id/btnreset"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom|left"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/ripple_oval"
+        android:contentDescription="@string/button_play"
+        android:elevation="8dp"
+        android:onClick="onClick_RESET"
+        android:src="@drawable/ic_replay_grey600_24dp" />
+
+    <TextView
+        android:id="@+id/tvWinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginBottom="12dp"
+        android:background="@color/primaryColorLight"
+        android:contentDescription="@string/players"
+        android:fontFamily="@font/chelsea_market"
+        android:paddingStart="130dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="16dp"
+        android:text="@string/players"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvWinner"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="@color/secondaryColorLight"
+        android:foregroundGravity="center_vertical|center">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="6dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnPlayer0"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/ripple_rect"
+                        android:backgroundTint="@color/team0" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/name0"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:ems="10"
+                        android:hint="@string/name"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true" />
+
+                    <ImageButton
+                        android:id="@+id/btnDeletePlayer0"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ripple_oval"
+                        android:backgroundTint="@color/team0_bright"
+                        android:contentDescription="@string/button_delete_player0"
+                        android:elevation="8dp"
+                        android:src="@drawable/ic_clear_white_24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnPlayer1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/ripple_rect"
+                        android:backgroundTint="@color/team1" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/name1"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:ems="10"
+                        android:hint="@string/name"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true" />
+
+                    <ImageButton
+                        android:id="@+id/btnDeletePlayer1"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ripple_oval"
+                        android:backgroundTint="@color/team1_bright"
+                        android:contentDescription="@string/button_delete_player1"
+                        android:elevation="8dp"
+                        android:src="@drawable/ic_clear_grey600_24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnPlayer2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/ripple_rect"
+                        android:backgroundTint="@color/team2" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/name2"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:ems="10"
+                        android:hint="@string/name"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true" />
+
+                    <ImageButton
+                        android:id="@+id/btnDeletePlayer2"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ripple_oval"
+                        android:backgroundTint="@color/team2_bright"
+                        android:contentDescription="@string/button_delete_player2"
+                        android:elevation="8dp"
+                        android:src="@drawable/ic_clear_grey600_24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnPlayer3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/ripple_rect"
+                        android:backgroundTint="@color/team3" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/name3"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:ems="10"
+                        android:hint="@string/name"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true" />
+
+                    <ImageButton
+                        android:id="@+id/btnDeletePlayer3"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ripple_oval"
+                        android:backgroundTint="@color/team3_bright"
+                        android:contentDescription="@string/button_delete_player3"
+                        android:elevation="8dp"
+                        android:src="@drawable/ic_clear_grey600_24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnPlayer4"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/ripple_rect"
+                        android:backgroundTint="@color/team4" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/name4"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:ems="10"
+                        android:hint="@string/name"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true" />
+
+                    <ImageButton
+                        android:id="@+id/btnDeletePlayer4"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ripple_oval"
+                        android:backgroundTint="@color/team4_bright"
+                        android:contentDescription="@string/button_delete_player4"
+                        android:elevation="8dp"
+                        android:src="@drawable/ic_clear_grey600_24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnPlayer5"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/ripple_rect"
+                        android:backgroundTint="@color/team5" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/name5"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:ems="10"
+                        android:hint="@string/name"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true" />
+
+                    <ImageButton
+                        android:id="@+id/btnDeletePlayer5"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ripple_oval"
+                        android:backgroundTint="@color/team5_bright"
+                        android:contentDescription="@string/button_delete_player5"
+                        android:elevation="8dp"
+                        android:src="@drawable/ic_clear_grey600_24dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clipChildren="true"
+        android:gravity="bottom|center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom|center|center_vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/ripple_oval"
+            android:contentDescription="@string/button_play"
+            android:elevation="8dp"
+            android:onClick="onClick_ADD"
+            android:src="@drawable/ic_person_add_grey600_24dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/ripple_oval"
+            android:backgroundTint="#CDDC39"
+            android:elevation="8dp"
+            android:onClick="onClick_START"
+            android:src="@drawable/ic_done_grey600_24dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+    </LinearLayout>
+
+</RelativeLayout>

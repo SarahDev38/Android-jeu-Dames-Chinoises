@@ -1,0 +1,16 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?android:colorControlHighlight">
+    <item android:id="@+id/buttonNext">
+        <shape >
+            <corners android:radius="35dp" />
+            <padding
+                android:top="6dp"
+                android:left="6dp"
+                android:bottom="6dp"
+                android:right="6dp" />
+            <solid
+            android:color="?android:colorAccent" />
+        </shape>
+
+    </item>
+</ripple>

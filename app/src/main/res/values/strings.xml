@@ -1,0 +1,71 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Chinese checkers</string>
+    <string name="players">players</string>
+    <string name="name">name :</string>
+    <string name="android">android</string>
+    <string name="android_player">android player</string>
+    <string name="error_message">there are not enough players</string>
+    <string name="button_play">play</string>
+    <string name="well_done">WELL DONE !</string>
+    <string name="a_gagne">won</string>
+    <string name="exit">EXIT</string>
+    <string name="winner">winner</string>
+    <string name="fin_de_la_partie">game over !!</string>
+    <string name="play_again">PLAY AGAIN</string>
+    <string name="save">SAVE</string>
+    <string name="profile">profile</string>
+    <string name="enter_your_name">enter your name</string>
+    <string name="scores">Scores :</string>
+    <string name="ok">OK</string>
+    <string name="reprendre_la_partie">GET BACK GAME</string>
+    <string name="nouvelle_partie">new game</string>
+    <string name="une_partie_est_en_cours">Game in progress...</string>
+    <string name="settings">settings</string>
+    <string name="rules_of_game">rules of the game</string>
+    <string name="_scores">scores</string>
+    <string name="button_delete_player1">button delete player1</string>
+    <string name="button_delete_player3">button delete player3</string>
+    <string name="button_delete_player4">button delete player4</string>
+    <string name="button_delete_player5">button delete player5</string>
+    <string name="button_delete_player2">button delete player2</string>
+    <string name="button_delete_player0">button delete player0</string>
+    <string name="medal_image">medal image</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="rules">rules</string>
+    <string name="rules1">HOW TO PLAY CHINESE CHECKERS :<br/><br/>
+        Chinese checkers can be played up to 6 players. Each player starts with 10 marbles positionned on his own color s triangle.<br/>
+        The goal of the game is to be the first player to move all ten of their marbles into the opposite triangle.<br/>
+    </string>
+    <string name="rules2">At your game turn, you can either :<br/><br/>
+        -	move a marble on any adjacent and vacant hole (6 at the most),<br/>
+        -	jump over another marble, in any direction, to the symmetrical hole around the marble you jumped.<br/>
+        o	the holes between the starting and the ending hole must all be vacant (except for the marble you jumped over),<br/>
+        o	the marble you jumped over may be one of your own or an opponent s one,<br/>
+        o	You may jump a series of pegs on one turn, one after the other, zig-zagging in any direction.<br/>
+    </string>
+    <string name="rules3">Moreover :<br/><br/>
+        -	two marbles can t be located one the same hole (even during a temporary stop at the occasion of a multiple jump),<br/>
+        -	you may hop through a triangle that is not your home or destination triangle, so long as you do not end your turn in that triangle<br/>
+        -	you may move your marble in any direction<br/>
+    </string>
+    <string name="rules4"><i>Is that not clear enough ?</i></string>
+    <string name="rules5"><i>Start a game with only "android" players and simply watch them do !</i></string>
+    <string name="button_back">button back</string>
+    <string name="image_i_don_t_understand">image I don t understand</string>
+    <string name="r_glages">settings :</string>
+    <string name="autoriser_l_affichage_de_l_aide">displaying help is allowed :</string>
+    <string name="lent">slow</string>
+    <string name="rapide">fast</string>
+    <string name="vitesse_de_d_placement">speed :</string>
+    <string name="normalSpeed">normal</string>
+    <string name="slowSpeed">slow</string>
+    <string name="verySlowSpeed">very slow</string>
+    <string name="fastSpeed">fast</string>
+    <string name="veryFastSpeed">very fast</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="no_recorded_score">No recorded score ...</string>
+
+
+</resources>

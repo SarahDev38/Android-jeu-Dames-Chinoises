@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dames chinoises</string>
+    <string name="players">joueurs</string>
+    <string name="name">nom :</string>
+    <string name="button_play">jouer</string>
+    <string name="error_message">nombre de joueurs insuffisant</string>
+    <string name="android_player">joueur android</string>
+    <string name="play_again">REJOUER</string>
+    <string name="a_gagne">a gagné</string>
+    <string name="exit">QUITTER</string>
+    <string name="winner">gagnant</string>
+    <string name="fin_de_la_partie">fin de la partie !!</string>
+    <string name="android">android</string>
+    <string name="well_done">BRAVO !</string>
+    <string name="save">ENREGISTRER</string>
+    <string name="profile">profil</string>
+    <string name="enter_your_name">quel est votre nom ?</string>
+    <string name="scores">Scores :</string>
+    <string name="ok">OK</string>
+    <string name="reprendre_la_partie">REPRENDRE LA PARTIE</string>
+    <string name="nouvelle_partie">nouvelle partie</string>
+    <string name="une_partie_est_en_cours">Une partie est en cours...</string>
+    <string name="settings">préférences</string>
+    <string name="rules_of_game">règles du jeu</string>
+    <string name="medal_image" >image de médaille</string>
+    <string name="_scores">scores</string>
+    <string name="button_delete_player1">button delete player1</string>
+    <string name="button_delete_player3">button delete player3</string>
+    <string name="button_delete_player4">button delete player4</string>
+    <string name="button_delete_player5">button delete player5</string>
+    <string name="button_delete_player2">button delete player2</string>
+    <string name="button_delete_player0">button delete player0</string>
+
+    <string name="rules">règle du jeu</string>
+    <string name="rules1">REGLES DU JEU :<br/><br/>
+        Le jeu peut être joué par 2 à 6 joueurs qui se voient chacun attribuer 10 pions de sa couleur ; le placement des camps des joueurs dépend du nombre de joueurs.<br/>
+        L objectif est d’être le premier à placer chacun de ses pions dans le camp situé à l’opposé du sien.<br/>
+    </string>
+    <string name="rules2">A tour de rôle, les joueurs font avancer un de leurs pions :<br/>
+        -	soit en le déplaçant sur une des cases adjacentes libres (au maximum 6 cases),<br/>
+        -	soit en utilisant autre pion pour sauter par-dessus et arriver sur la case diamétralement opposée.<br/>
+        o	Les cases situées entre le point de départ et le point d’arrivée doivent toutes être libres (sauf bien sur celle du pion central)<br/>
+        o	le pion central peut être un pion adverse ou un pion de son camp<br/>
+        o	il est possible d’enchainer autant de déplacements de ce type que l’on souhaite, peu importe les directions de chacun de ces déplacements<br/>
+    </string>
+    <string name="rules3">En outre :<br/><br/>
+        -	deux pions ne peuvent pas être situés sur la même case (même s’il s’agit d’un arrêt temporaire dans le cas d’un saut de pion).<br/>
+        -	il est possible de transiter par un camp adverse, mais à l’issue du tour de jeu, le pion déplacé ne peut stationner que dans son camp, dans le camp de destination ou sur les cases communes au centre du jeu.<br/>
+        -	il est possible de se déplacer dans toutes les directions et donc de revenir en arrière.<br/>
+        -	les pions ne sont jamais retirés du jeu.<br/>
+    </string>
+
+    <string name="rules4">
+        <i>Ce n est pas assez clair ?</i>
+    </string>
+    <string name="rules5">
+        <i>Pour mieux vous familiariser avec le jeu, lancez une partie avec plusieurs joueurs virtuels « android » et observez le déroulement du jeu !</i>
+    </string>
+    <string name="button_back">bouton retour</string>
+    <string name="image_i_don_t_understand">image je n ai pas bien compris</string>
+    <string name="r_glages">réglages :</string>
+    <string name="autoriser_l_affichage_de_l_aide">autoriser l affichage de l aide :</string>
+    <string name="lent">lent</string>
+    <string name="rapide">rapide</string>
+    <string name="vitesse_de_d_placement">vitesse de déplacement :</string>
+    <string name="normalSpeed">normal</string>
+    <string name="slowSpeed">lent</string>
+    <string name="verySlowSpeed">très lent</string>
+    <string name="fastSpeed">rapide</string>
+    <string name="veryFastSpeed">très rapide</string>
+    <string name="yes">oui</string>
+    <string name="no">non</string>
+    <string name="no_recorded_score">Aucun score enregistré...</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="amber_200">#fff350</color>
+    <color name="amber_500">#ffc107</color>
+    <color name="cyan_500">#26c6da</color>
+    <color name="cyan_700">#0095a8</color>
+
+    <color name="primaryColor">#6a0080</color>
+    <color name="primaryColorLight">#9c27b0</color>
+   <!-- <color name="primaryColorLight">#d05ce3</color> -->
+    <color name="primaryColorDark">#6a0080</color>
+    <color name="secondaryColor">#d6cbc7</color>
+    <color name="secondaryColorLight">#fffefa</color>
+    <color name="secondaryColorDark">#a59a96</color>
+    <color name="fond">#e1e1e1</color>
+    <color name="gold">#ffd700</color>
+
+
+    <!--
+     <color name="purple_200">#FFBB86FC</color>
+     <color name="purple_500">#FF6200EE</color>
+     <color name="purple_700">#FF3700B3</color>
+     <color name="teal_200">#FF03DAC5</color>
+     <color name="teal_700">#FF018786</color>
+     -->
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="board">#CABFBB</color>
+    <color name="node">#a69b97</color>
+    <color name="help">#bcaaa4</color>
+
+    <color name="team0">#212121</color>
+    <color name="team1">#FFC107</color>
+    <color name="team2">#8bc34a</color>
+    <color name="team3">#FAFAFA</color>
+    <color name="team4">#03a9f4</color>
+    <color name="team5">#f44336</color>
+
+    <color name="team0_bright">#616161</color>
+    <color name="team1_bright">#ffecb3</color>
+    <color name="team2_bright">#dcedc8</color>
+    <color name="team3_bright">#E6E6E6</color>
+    <color name="team4_bright">#b3e5fc</color>
+    <color name="team5_bright">#ffcdd2</color>
+
+</resources>
